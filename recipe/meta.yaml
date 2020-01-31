@@ -21,6 +21,9 @@ requirements:
     - pip
   run:
     - python
+    - numpy
+    - scipy
+    - h5py
     - requests
     - requests-toolbelt
     - ads
