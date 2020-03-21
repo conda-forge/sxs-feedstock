@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2020.2.4.15.27.6" %}
-{% set sha256 = "f765ead4e2497ac9f6a808dd893de9f5f72a600a3889e436fae72befecf1df7d" %}
+{% set version = "2020.3.21.10.12.32" %}
+{% set sha256 = "531221b2360765a9f903468c7bb1cdca0b788ae090a9d51314eb4f3c825638dd" %}
 
 package:
   name: {{ name|lower }}
@@ -41,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A collection of python code used by the SXS collaboration'
+  summary: A collection of python code used by the SXS collaboration
   description: |
     This package provides a number of utilities for use by the SXS collaboration, and others who use our data.
     For example, the `metadata` subpackage provides functions for reading and analyzing the metadata files
