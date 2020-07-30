@@ -5,7 +5,7 @@ Home: https://github.com/moble/sxs
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A collection of python code used by the SXS collaboration
 
