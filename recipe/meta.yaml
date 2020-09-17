@@ -34,7 +34,7 @@ requirements:
     - requests
     - urllib3
     - quaternionic >=0.2
-    - spherical >=0.1
+    - spherical
 
 test:
   imports:
