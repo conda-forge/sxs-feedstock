@@ -1,7 +1,7 @@
 About sxs
 =========
 
-Home: https://github.com/moble/sxs
+Home: https://github.com/sxs-collaboration/sxs
 
 Package license: MIT
 
@@ -20,11 +20,44 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=master">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
@@ -35,6 +68,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-sxs-green.svg)](https://anaconda.org/conda-forge/sxs) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sxs.svg)](https://anaconda.org/conda-forge/sxs) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sxs.svg)](https://anaconda.org/conda-forge/sxs) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sxs.svg)](https://anaconda.org/conda-forge/sxs) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sxs--ecosystem-green.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sxs-ecosystem.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sxs-ecosystem.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sxs-ecosystem.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) |
 
 Installing sxs
 ==============
@@ -45,10 +79,10 @@ Installing `sxs` from the `conda-forge` channel can be achieved by adding `conda
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `sxs` can be installed with:
+Once the `conda-forge` channel has been enabled, `sxs, sxs-ecosystem` can be installed with:
 
 ```
-conda install sxs
+conda install sxs sxs-ecosystem
 ```
 
 It is possible to list all of the versions of `sxs` available on your platform with:
