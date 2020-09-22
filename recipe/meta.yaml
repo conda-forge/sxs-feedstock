@@ -11,7 +11,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv
 
@@ -61,9 +60,9 @@ outputs:
         - qgrid
         - rise
         - quaternion
-        - spinsfast
-        - spherical_functions
-        - scri
+        - spinsfast  # [not win]
+        - spherical_functions  # [not win]
+        - scri  # [not win]
         - {{ pin_subpackage('sxs', exact=True) }}
     test:
       imports:
