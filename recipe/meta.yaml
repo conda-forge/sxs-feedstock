@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [not win]
   script: del /f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [win]
 
@@ -55,7 +55,7 @@ outputs:
         - jupyterlab
         - line_profiler
         - memory_profiler
-        - matplotlib
+        - matplotlib-base
         - sympy
         - corner
         - qgrid
