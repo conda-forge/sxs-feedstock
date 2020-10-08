@@ -5,9 +5,11 @@ Home: https://github.com/sxs-collaboration/sxs
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sxs-feedstock/blob/master/LICENSE.txt)
 
 Summary: A collection of python code used by the SXS collaboration
+
+Development: https://github.com/sxs-collaboration/sxs
 
 This package provides a number of utilities for use by the SXS collaboration, and others who use our data.
 For example, the `metadata` subpackage provides functions for reading and analyzing the metadata files
