@@ -46,9 +46,9 @@ outputs:
   - name: sxs-ecosystem
     requirements:
       host:
-        - python >=3.6
+        - python >=3.6,<3.9
       run:
-        - python >=3.6
+        - python >=3.6,<3.9
         - ipywidgets
         - ipykernel
         - jupyter_contrib_nbextensions
