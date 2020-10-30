@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2020.9.19" %}
-{% set sha256 = "0109d3f078f9c4ebe7d72ecfd730ff78df51a72e8338a33269b77964bc1e57ec" %}
+{% set version = "2020.9.22" %}
+{% set sha256 = "db5ce6279e6af30db35f0341b285a60c3507fa23cb05d9768d8fbce87c48692d" %}
 
 package:
   name: {{ name|lower }}
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.9
     - pip >=20.0.2
   run:
-    - python >=3.6
+    - python >=3.6,<3.9
     - importlib-metadata
     - numpy >=1.13
     - scipy >=1.0
