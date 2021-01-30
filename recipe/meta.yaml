@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2021.0.1" %}
-{% set sha256 = "99db5068c2c6171e7a593d0f83f90bc4d4f2d025e71f18751c2fc01720178205" %}
+{% set version = "2021.0.2" %}
+{% set sha256 = "fd64b61a7b560ee265e069bc91aca51eca1a24e9a52b4c71a0a4d28a494eef65" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [not win]
   script: del /f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [win]
 
