@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2021.0.2" %}
-{% set sha256 = "fd64b61a7b560ee265e069bc91aca51eca1a24e9a52b4c71a0a4d28a494eef65" %}
+{% set version = "2021.0.3" %}
+{% set sha256 = "79f19e42d2e63fab34ad54571de71fc5359c6ee11df190f9a407511f4893af9f" %}
 
 package:
   name: {{ name|lower }}
