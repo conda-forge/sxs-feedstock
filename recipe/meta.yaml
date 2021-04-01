@@ -11,17 +11,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [not win]
   script: del /f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [win]
 
 requirements:
   host:
-    - python >=3.6,<3.9
+    - python >=3.7
     - pip >=20.0.2
   run:
-    - python >=3.6,<3.9
-    - importlib-metadata
+    - python >=3.7
+    - importlib-metadata  # [py37]
     - numpy >=1.13
     - scipy >=1.0
     - numba >=0.50
@@ -47,9 +47,9 @@ outputs:
   - name: sxs-ecosystem
     requirements:
       host:
-        - python >=3.6,<3.9
+        - python >=3.7
       run:
-        - python >=3.6,<3.9
+        - python >=3.7
         - ipywidgets
         - ipykernel
         - jupyter_contrib_nbextensions
