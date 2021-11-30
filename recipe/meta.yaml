@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2021.0.3" %}
-{% set sha256 = "79f19e42d2e63fab34ad54571de71fc5359c6ee11df190f9a407511f4893af9f" %}
+{% set version = "2021.0.5" %}
+{% set sha256 = "6ba3b02e0b83225b3ac310156f77c37c84f6214ad354df8b276e66cda91d1229" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ requirements:
     - pip >=20.0.2
   run:
     - python >=3.7
-    - importlib-metadata  # [py37]
+    - importlib-metadata  # [py==37]
     - numpy >=1.13
     - scipy >=1.0
     - numba >=0.50
