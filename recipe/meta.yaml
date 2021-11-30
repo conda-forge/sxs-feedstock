@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<3.10
     - pip >=20.0.2
   run:
-    - python >=3.7
+    - python >=3.7,<3.10
     - importlib-metadata  # [py==37]
     - numpy >=1.13
     - scipy >=1.0
@@ -47,9 +47,9 @@ outputs:
   - name: sxs-ecosystem
     requirements:
       host:
-        - python >=3.7
+        - python >=3.7,<3.10
       run:
-        - python >=3.7
+        - python >=3.7,<3.10
         - ipywidgets
         - ipykernel
         - jupyter_contrib_nbextensions
