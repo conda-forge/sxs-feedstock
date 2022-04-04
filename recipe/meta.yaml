@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2022.0.0" %}
-{% set sha256 = "089cd6c4f4a7c983f10d7152f9509aa5b7895f6b704ac0fae83818556ff257a2" %}
+{% set version = "2022.3.1" %}
+{% set sha256 = "9f902eb43095d8c78930081652a61623d71189c5bf3019ffd3719f7ade39b811" %}
 
 package:
   name: {{ name|lower }}
@@ -11,17 +11,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
-  script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [not win]
-  script: del /f pyproject.toml && {{ PYTHON }} -m pip install . -vv  # [win]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.8,<3.11
     - pip >=20.0.2
+    - poetry-core
   run:
     - python >=3.8,<3.11
-    - importlib-metadata  # [py==37]
     - numpy >=1.20
     - scipy >=1.0
     - numba >=0.55
