@@ -17,8 +17,7 @@ build:
 requirements:
   host:
     - python >=3.8
-    - pip >=20.0.2
-    - poetry-core
+    - pip
   run:
     - python >=3.8
     - numpy >=1.20
