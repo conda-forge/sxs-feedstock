@@ -11,16 +11,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python
     - pip >=20.0.2
     - poetry-core
   run:
-    - python >=3.8,<3.11
+    - python
     - numpy >=1.20
     - scipy >=1.0
     - numba >=0.55
@@ -33,7 +33,7 @@ requirements:
     - requests
     - urllib3
     - quaternionic >=1.0
-    - spherical
+    - spherical >=1.0
     - spinsfast  # [not win]
 
 test:
