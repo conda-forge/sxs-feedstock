@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     # See conda_build_config.yaml for list of pythons to build with
-    - python {{ python }}
+    - python >=3.8
     - pip >=20.0.2
     - poetry-core
   run:
-    - python {{ python }}
+    - python >=3.8
     - numpy
     - scipy
     - numba
