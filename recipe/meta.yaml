@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2022.3.2" %}
-{% set sha256 = "54c3d9ac8b33193da990cd249d472b3a9787643cd7af22aaaf2af49dd9b7c9d4" %}
+{% set version = "2022.3.3" %}
+{% set sha256 = "4e614d47ec6f5a548cae5a7b3a1dcdb269322b000e57904631cf03af18bfec5b" %}
 
 package:
   name: {{ name|lower }}
@@ -11,20 +11,21 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
 requirements:
   host:
     # See conda_build_config.yaml for list of pythons to build with
-    - python {{ python }}
+    - python >=3.8
     - pip >=20.0.2
     - poetry-core
   run:
-    - python {{ python }}
-    - numpy >=1.20
-    - scipy >=1.0
-    - numba >=0.55
+    - python >=3.8
+    - numpy
+    - scipy
+    - numba
     - h5py
     - requests
     - tqdm
@@ -34,41 +35,11 @@ requirements:
     - requests
     - urllib3
     - quaternionic >=1.0
-    - spherical
-    - spinsfast  # [not win]
+    - spherical >=1.0
 
 test:
   imports:
     - sxs
-
-outputs:
-  - name: sxs
-
-  - name: sxs-ecosystem
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        - ipywidgets
-        - ipykernel
-        - jupyter_contrib_nbextensions
-        - jupyterlab
-        - line_profiler
-        - memory_profiler
-        - matplotlib-base
-        - sympy
-        - corner
-        - qgrid
-        - rise
-        - quaternion
-        - spinsfast  # [not win]
-        - spherical_functions  # [not win]
-        - scri  # [not win]
-        - {{ pin_subpackage('sxs', exact=True) }}
-    test:
-      imports:
-        - sxs
 
 about:
   home: https://github.com/sxs-collaboration/sxs
