@@ -22,86 +22,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_python3.10</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.10</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=win&configuration=win_64_python3.10" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=win&configuration=win_64_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main&jobName=win&configuration=win_64_python3.9" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7193&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sxs-feedstock?branchName=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -112,7 +37,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-sxs-green.svg)](https://anaconda.org/conda-forge/sxs) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sxs.svg)](https://anaconda.org/conda-forge/sxs) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sxs.svg)](https://anaconda.org/conda-forge/sxs) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sxs.svg)](https://anaconda.org/conda-forge/sxs) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sxs--ecosystem-green.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sxs-ecosystem.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sxs-ecosystem.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sxs-ecosystem.svg)](https://anaconda.org/conda-forge/sxs-ecosystem) |
 
 Installing sxs
 ==============
@@ -124,16 +48,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sxs, sxs-ecosystem` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `sxs` can be installed with `conda`:
 
 ```
-conda install sxs sxs-ecosystem
+conda install sxs
 ```
 
 or with `mamba`:
 
 ```
-mamba install sxs sxs-ecosystem
+mamba install sxs
 ```
 
 It is possible to list all of the versions of `sxs` available on your platform with `conda`:
