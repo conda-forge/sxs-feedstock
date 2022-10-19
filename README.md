@@ -15,7 +15,8 @@ This package provides a number of utilities for use by the SXS collaboration, an
 For example, the `metadata` subpackage provides functions for reading and analyzing the metadata files
 provided with SXS simulations for describing the physics they represent.  Another important subpackage is
 `zenodo`, which provides handy functions for interacting with zenodo.org in general, and in particular our
-collection of simulation data on that site.
+collection of simulation data on that site.  This subpackage may also be helpful for more general
+Invenio-based data repositories.
 
 
 Current build status
