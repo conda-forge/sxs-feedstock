@@ -20,7 +20,6 @@ requirements:
     # See conda_build_config.yaml for list of pythons to build with
     - python >=3.8
     - pip >=20.0.2
-    - poetry-core
   run:
     - python >=3.8
     - numpy
