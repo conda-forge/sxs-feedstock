@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2022.4.5" %}
-{% set sha256 = "175e1c1c5ac561c65ba8bf0b9ac12843dc9b4747cf5ebf6b76379a665f74d2ea" %}
+{% set version = "2022.5.1" %}
+{% set sha256 = "ad6d2d51e759ebf29fde1f133fe97b73181192a6503396721c8b247258ebb67a" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,7 @@ requirements:
     # See conda_build_config.yaml for list of pythons to build with
     - python >=3.8
     - pip >=20.0.2
-    - poetry-core
+    - hatchling
   run:
     - python >=3.8
     - numpy
