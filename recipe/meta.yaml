@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
@@ -36,6 +36,7 @@ requirements:
     - urllib3
     - quaternionic >=1.0
     - spherical >=1.0
+    - pyjuliacall >=0.9.20
 
 test:
   imports:
