@@ -1,13 +1,13 @@
 {% set name = "sxs" %}
-{% set version = "2024.0.22" %}
-{% set sha256 = "47aaad6b7ea98f74a75bb812749a1bcafafda26ab73c83a8e13bff1c10dff4be" %}
+{% set version = "2024.0.23" %}
+{% set sha256 = "7926a320daed2086e53c5664b99a7e5e0fffb7284271303d987a3b4d4193eabf" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
