@@ -11,18 +11,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
 requirements:
   host:
     # See conda_build_config.yaml for list of pythons to build with
-    - python >=3.8
+    - python {{ python_min }}
     - pip >=20.0.2
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - scipy
     - numba
@@ -39,6 +39,8 @@ requirements:
     - pyjuliacall >=0.9.20
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sxs
 
