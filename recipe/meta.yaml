@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2024.0.44" %}
-{% set sha256 = "a09d4408d10bde2f6612d9faca671dadb82bffa9e334e0632e72707e99509277" %}
+{% set version = "2025.0.1" %}
+{% set sha256 = "abcfba7b787c0262eb72a7c5d0ef377cc5c7c0fcaf0f6367a2e8d83b60e29569" %}
 {% set python_min = "3.10" %}
 
 # See https://conda-forge.org/docs/maintainer/knowledge_base/#noarch-python for the reason we
@@ -29,6 +29,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
+    - sxscatalog >=3.0.0
     - numpy
     - scipy
     - numba
