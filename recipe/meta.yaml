@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2025.0.19" %}
-{% set sha256 = "e28490efc814f3280211cbfb2bcf7c18eeaa0afdad75a60ac5a6b4ec23daa242" %}
+{% set version = "2025.0.20" %}
+{% set sha256 = "35d7151e5030c534133ae69d18129a73b7f6b153d01bc2df68f811f34fbdd048" %}
 {% set python_min = "3.10" %}
 
 # See https://conda-forge.org/docs/maintainer/knowledge_base/#noarch-python for the reason we
