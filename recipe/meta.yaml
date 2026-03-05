@@ -1,12 +1,12 @@
 {% set name = "sxs" %}
 {% set version = "2025.0.24" %}
 {% set sha256 = "8b00b3308a3b61eb4942a25c388017e5010a73ffd45d74c17198fbd0bfc7df3f" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.12" %}
 
 # See https://conda-forge.org/docs/maintainer/knowledge_base/#noarch-python for the reason we
 # *can* set `python_min` here and https://github.com/conda-forge/cfep/blob/main/cfep-25.md
 # for what `python_min` actually means.  I have to do this because conda-forge still supports
-# python 3.9, but sxs only supports >=3.10.
+# python 3.9, but sxs only supports >=3.12.
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
@@ -30,20 +30,20 @@ requirements:
   run:
     - python >={{ python_min }}
     - sxscatalog >=3.0.0
-    - numpy
-    - scipy
-    - numba
-    - h5py
-    - requests
-    - tqdm
-    - pytz
-    - pandas
-    - inflection
-    - requests
-    - urllib3
-    - quaternionic >=1.0
-    - spherical >=1.0
-    - pyjuliacall >=0.9.20
+    - numpy >=2.0,<3.0
+    - scipy >=1.13
+    - numba >=0.55
+    - h5py >=3
+    - requests >=2.24.0
+    - tqdm >=4.63.1
+    - pytz >=2020.1
+    - pandas >=1.1.2
+    - inflection >=0.5.1
+    - requests >=2.24.0
+    - urllib3 >=1.25.10
+    - quaternionic >=1.0.15
+    - spherical >=1.0.15
+    - pyjuliacall >=0.9.30
 
 test:
   requires:
