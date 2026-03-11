@@ -1,6 +1,6 @@
 {% set name = "sxs" %}
-{% set version = "2025.0.24" %}
-{% set sha256 = "8b00b3308a3b61eb4942a25c388017e5010a73ffd45d74c17198fbd0bfc7df3f" %}
+{% set version = "2025.0.25" %}
+{% set sha256 = "7f0d80d13cc7e2c19360bb0f97448cdd7c412bd25d43e5d1817d92d80f03ea19" %}
 {% set python_min = "3.12" %}
 
 # See https://conda-forge.org/docs/maintainer/knowledge_base/#noarch-python for the reason we
@@ -17,7 +17,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
